@@ -210,3 +210,12 @@ body.night .desktop{background-color:#654b60;background-image:url("data:image/sv
 /* Place the About action at the right edge of the welcome action row. */
 .welcome-actions .about-action{margin-left:auto}
 @media(max-width:700px){#welcome .welcome-actions .primary{flex:0 1 auto}}
+
+/* Pixel cursors; retain text, drag and resize cues. */
+@media(hover:hover) and (pointer:fine){
+:root{--pixel-arrow:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20shape-rendering%3D%22crispEdges%22%3E%3Cpath%20d%3D%22M3%202h3v3h3v3h3v3h3v3h3v3h3v3h-9v3h-3v3H6V8H3Z%22%20fill%3D%22%23fff0f7%22%2F%3E%3Cpath%20d%3D%22M6%205h3v3h3v3h3v3h3v3H9v6H6Z%22%20fill%3D%22%2362345f%22%2F%3E%3Cpath%20d%3D%22M12%2020h3v6h3v3h-6v-3H9v-6Z%22%20fill%3D%22%23fff0f7%22%2F%3E%3Cpath%20d%3D%22M12%2020h3v6h-3Z%22%20fill%3D%22%2362345f%22%2F%3E%3C%2Fsvg%3E") 6 5,default;--pixel-hand:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20shape-rendering%3D%22crispEdges%22%3E%3Cpath%20d%3D%22M10%202h7v10h3v2h4v2h4v10h-3v4H10v-3H7v-4H4v-7h6Z%22%20fill%3D%22%2362345f%22%2F%3E%3Cpath%20d%3D%22M12%204h3v14h3v-4h2v5h2v-3h2v4h2v5h-3v3H12v-3H9v-4H6v-3h3v3h3Z%22%20fill%3D%22%23ffe0ef%22%2F%3E%3C%2Fsvg%3E") 13 4,pointer}
+body{cursor:var(--pixel-arrow)}
+a,button,summary{cursor:var(--pixel-hand)}
+.titlebar{cursor:grab}.titlebar:active{cursor:grabbing}.resize-handle{cursor:nwse-resize}
+input,textarea,[contenteditable="true"]{cursor:text}
+}
