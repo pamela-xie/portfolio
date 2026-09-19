@@ -258,3 +258,7 @@ input,textarea,[contenteditable="true"]{cursor:text}
 .meow-project .heading-up-arrow{font-size:1.05em;margin-right:9px;font-weight:700;position:relative;top:2px}
 
 .meow-project .heading-up-arrow{width:20px;height:24px;top:3px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 28'%3E%3Cpath d='M11 1Q12 0 13 1L23 11Q25 13 22 13H17V26Q17 28 15 28H9Q7 28 7 26V13H2Q-1 13 1 11Z'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* Flat editorial headings; no button-like border or elevation. */
+.detail-body.meow-project>h3,.meow-project .project-story h4{border:0;border-radius:0;box-shadow:none}
+.meow-project .heading-up-arrow{width:22px;height:26px;color:#654464;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 28'%3E%3Cpath d='M10.9 .5Q12 -.5 13.1 .5L23.3 10.8Q25 12.8 22.5 12.8H17V26.5Q17 28 15.5 28H8.5Q7 28 7 26.5V12.8H1.5Q-1 12.8 .7 10.8Z'/%3E%3C/svg%3E") center/contain no-repeat}

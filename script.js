@@ -229,8 +229,8 @@ const projects = [
     "id": "everyday",
     "title": "有求必應，好神旺旺",
     "category": "時報金犢獎-旺旺集團行銷企劃案",
-    "cover": "wang-cover.jpg",
-    "preview": "wang-cover.jpg",
+    "cover": "wang-cover-logo.svg",
+    "preview": "wang-cover-logo.svg",
     "link": "#project/everyday",
     "description": "",
     "demo": false
