@@ -55,7 +55,9 @@ const projects = [
         "src": "guang-xian-07.jpg",
         "alt": "鳳梨桌燈設計與光影展示"
       }
-    ]
+    ],
+    "certificate": "fada-certificate.jpg",
+    "award": "2026 FADA UK 產品概念設計類 銀獎"
   },
   {
     "id": "mori",
@@ -161,7 +163,8 @@ const projects = [
       },
       {
         "title": "角色設計-勇士貓咪",
-        "carousel": [
+        "pointsUp": false,
+        "characters": [
           {
             "src": "meow-10.png",
             "alt": "勇士貓咪：弓箭手"
@@ -178,8 +181,7 @@ const projects = [
             "src": "meow-13.png",
             "alt": "勇士貓咪：騎士"
           }
-        ],
-        "pointsUp": false
+        ]
       },
       {
         "images": [
@@ -223,7 +225,9 @@ const projects = [
           }
         ]
       }
-    ]
+    ],
+    "certificate": "egda-certificate.png",
+    "award": "2024 EGDA全球華人教育遊戲設計大賞 優選獎"
   },
   {
     "id": "everyday",
@@ -547,7 +551,6 @@ addEventListener('resize', () => windows.forEach(win => {
     image.onerror = hidePreview;
     image.src = project.preview || project.cover;
   }
-  let stopProjectCarousel = () => {};
   function renderProjectBlock(body, block) {
     const section = document.createElement('section');
     section.className = 'project-story';
@@ -571,37 +574,17 @@ addEventListener('resize', () => windows.forEach(win => {
         link.append(img); section.append(link);
       }
     }
-    if (block.carousel) {
-      const stage = document.createElement('div'); stage.className = 'character-stage';
-      const slides = block.carousel.map((item, i) => {
-        const img = new Image(); img.src = item.src; img.alt = item.alt;
-        img.className = 'character-slide'; img.classList.toggle('current', i === 0);
-        img.setAttribute('aria-hidden', String(i !== 0)); stage.append(img); return img;
-      });
-      let index = 0, paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const controls = document.createElement('div'); controls.className = 'character-controls';
-      const label = document.createElement('span');
-      function show(next) {
-        index = (next + slides.length) % slides.length;
-        slides.forEach((slide, i) => { slide.classList.toggle('current', i === index); slide.setAttribute('aria-hidden', String(i !== index)); });
-        label.textContent = `${index + 1} / ${slides.length} · ${block.carousel[index].alt}`;
+    if (block.characters) {
+      const stage = document.createElement('div'); stage.className = 'character-lineup';
+      for (const item of block.characters) {
+        const img = new Image(); img.src = item.src; img.alt = item.alt; img.loading = 'lazy'; stage.append(img);
       }
-      const previous = document.createElement('button'); previous.textContent = '←'; previous.setAttribute('aria-label','上一個角色'); previous.onclick = () => show(index - 1);
-      const next = document.createElement('button'); next.textContent = '→'; next.setAttribute('aria-label','下一個角色'); next.onclick = () => show(index + 1);
-      const toggle = document.createElement('button');
-      const updateToggle = () => { toggle.textContent = paused ? '播放' : '暫停'; toggle.setAttribute('aria-label', paused ? '播放角色輪播' : '暫停角色輪播'); };
-      toggle.onclick = () => { paused = !paused; updateToggle(); }; updateToggle();
-      controls.append(previous, label, next, toggle); section.append(stage, controls); show(0);
-      const timer = setInterval(() => {
-        if (!paused && !document.hidden && !document.getElementById('detail').hidden && section.isConnected && !section.matches(':hover') && !section.contains(document.activeElement)) show(index + 1);
-      }, 3200);
-      stopProjectCarousel = () => clearInterval(timer);
+      section.append(stage);
     }
     body.append(section);
   }
 
   function openProject(project) {
-    stopProjectCarousel();
     hidePreview();
     const body = document.getElementById('detail-body');
     const image = new Image(); image.src = project.preview || project.cover;
@@ -610,7 +593,19 @@ addEventListener('resize', () => windows.forEach(win => {
     const category = document.createElement('p'); category.className = 'type'; category.textContent = project.category;
     const text = document.createElement('p'); text.textContent = project.description || '';
     body.classList.toggle('meow-project', project.id === 'mori');
-    body.replaceChildren(image, title, category);
+    const headingRow = document.createElement('div'); headingRow.className = 'project-heading-row'; headingRow.append(title);
+    if (project.certificate) {
+      const certificate = document.createElement('a'); certificate.className = 'project-certificate';
+      certificate.href = project.certificate; certificate.target = '_blank'; certificate.rel = 'noopener';
+      certificate.setAttribute('aria-label', '放大查看獎狀：' + project.award);
+      const thumb = new Image(); thumb.src = project.certificate; thumb.alt = project.award + '獎狀';
+      const caption = document.createElement('span'); caption.textContent = '點擊放大獎狀 ↗';
+      certificate.append(thumb, caption); headingRow.append(certificate);
+    }
+    body.replaceChildren(image, headingRow, category);
+    if (project.award) {
+      const ribbon = document.createElement('p'); ribbon.className = 'award-ribbon'; ribbon.textContent = project.award; body.append(ribbon);
+    }
     if (project.blocks?.length) {
       project.blocks.forEach(block => renderProjectBlock(body, block));
     } else if (project.sections?.length) {
@@ -644,6 +639,12 @@ addEventListener('resize', () => windows.forEach(win => {
       const note = document.createElement('p'); note.className = 'pending';
       note.textContent = '此為版型示範，非謝沛璇本人實際作品。'; body.append(note);
     }
+    const back = document.createElement('button'); back.className = 'project-back'; back.textContent = '← 回到上一頁・精選作品';
+    back.addEventListener('click', () => {
+      history.pushState(null, '', location.pathname + location.search + '#work');
+      hideWindow(document.getElementById('detail'), true); openWindow('work');
+    });
+    body.append(back);
     document.getElementById('detail-title').textContent = project.title;
     openWindow('detail'); body.scrollTop = 0;
   }
