@@ -219,3 +219,21 @@ a,button,summary{cursor:var(--pixel-hand)}
 .titlebar{cursor:grab}.titlebar:active{cursor:grabbing}.resize-handle{cursor:nwse-resize}
 input,textarea,[contenteditable="true"]{cursor:text}
 }
+
+/* Selected Works gallery, preserving the existing desktop window. */
+#work .section-label{margin-bottom:22px}
+#work .projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.gallery-card{display:block;min-width:0;text-decoration:none;transition:transform 320ms ease,opacity 320ms ease}
+.gallery-card .project-cover{display:block;width:100%;height:auto;aspect-ratio:1.18;object-fit:cover;border:1px solid var(--ink);background:#f1e7f6;border-radius:2px}
+.gallery-card .project-caption{flex-direction:column;align-items:flex-start;gap:5px}.gallery-card .project-caption strong{font-size:15px}.gallery-card .project-caption>span{font-size:12px}
+.gallery-card.is-previewed{transform:scale(1.02)}
+.projects.previewing .gallery-card:not(.is-previewed){opacity:.72}
+.gallery-preview{position:fixed;inset:auto;margin:0;box-sizing:border-box;padding:10px;display:block;background:#fffafc;border:1px solid #735981;box-shadow:5px 10px 24px #39244330;pointer-events:none;z-index:2147483647;opacity:0;scale:.96;transition:opacity 320ms ease,scale 320ms ease;overflow:hidden}
+.gallery-preview::backdrop{background:transparent;pointer-events:none}
+.gallery-preview.visible{opacity:1;scale:1}
+.gallery-preview img{display:block;width:100%;height:100%;object-fit:contain}
+.project-detail-cover{display:block;width:100%;height:auto;max-height:60svh;object-fit:contain;background:#f7edf7;border:1px solid #e7cbd7}
+@media(min-width:461px) and (max-width:900px){#work .projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){#work .projects{grid-template-columns:1fr}}
+@media(hover:none),(pointer:coarse),(max-width:700px){.gallery-preview{display:none!important}}
+@media(prefers-reduced-motion:reduce){.gallery-preview,.gallery-card{transition:none;scale:1}.gallery-card.is-previewed{transform:none}}
