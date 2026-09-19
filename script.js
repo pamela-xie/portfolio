@@ -3,12 +3,59 @@ const projects = [
   {
     "id": "type-study",
     "title": "光纖-環保植物皮革應用於家飾燈具之研究",
-    "category": "商品設計/植物皮革/",
+    "category": "商品設計/植物皮革/ 農業廢棄物再利用/永續材料/燈具設計",
     "cover": "guang-xian-cover.jpg",
     "preview": "guang-xian-cover.jpg",
     "link": "#project/type-study",
     "description": "環保植物皮革應用於家飾燈具之研究。",
-    "demo": false
+    "demo": false,
+    "sections": [
+      {
+        "title": "摘要",
+        "paragraphs": [
+          "在永續設計逐漸成為全球趨勢的背景下，材料選擇不再僅是功能與美觀的考量，更涉及環境影響、資源循環與社會責任。傳統動物皮革的加工過程需耗費大量水資源與化學藥劑，並與動物屠宰產業鏈相互依存：而人造皮革多以聚氨酯材料製成，其製程需使用大量有機溶劑，對環境與人體健康皆可能造成負擔。相較之下，植物皮革以鳳梨葉、香蕉莖、蘋果渣等農業副產物製成，不僅不含動物成分，且具備可降解、低污染與友善動物等優勢，成為更符合永續理念的新型材料。",
+          "本研究以「水果原生材質×零農廢再製」為核心理念，運用鳳梨農業廢棄物製成的純素植物皮革，結合植物纖維紙，設計一系列具文化寓意或永續價值的水果造型燈具。設計概念源自日常生活中的「創皮、剝果」動作，將果皮片狀化與幾何化，轉化為層層堆疊的結構語彙，使光線從皮革縫隙中柔和透出，呈現溫潤且富有層次的光影效果。透過材料、結構與光影的整合，讓照明產品同時具有功能性、美感與情感連結。"
+        ]
+      },
+      {
+        "title": "專案角色｜企劃・商品設計・AI 視覺呈現",
+        "paragraphs": [
+          "本專案由水果的形態與使用行為出發，探索水果特徵如何轉化為燈具設計。我主要負責企劃發想與商品設計，並以**香蕉燈作為主要實體製作成果**，將香蕉的分瓣結構與「剝皮」動作轉化為燈具的造型與互動方式。",
+          "透過拉鍊作為開合機構，使用者可以像剝香蕉一樣逐步打開外層，使光線隨著開啟程度釋放，讓水果意象不只停留在外觀，而是進一步成為產品的操作語言。",
+          "在成果呈現上，搭配 **AI 生成工具進行商品視覺與情境模擬**，補充實體模型在不同光線、背景與使用狀態下的視覺表現。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "src": "guang-xian-01.jpg",
+        "alt": "香蕉立地燈設計與開合展示"
+      },
+      {
+        "src": "guang-xian-02.jpg",
+        "alt": "香蕉燈外層局部開啟視覺"
+      },
+      {
+        "src": "guang-xian-03.jpg",
+        "alt": "香蕉燈分瓣結構展開視覺"
+      },
+      {
+        "src": "guang-xian-04.jpg",
+        "alt": "香蕉燈外層展開視覺"
+      },
+      {
+        "src": "guang-xian-05.jpg",
+        "alt": "香蕉燈拉鍊開合與光線情境"
+      },
+      {
+        "src": "guang-xian-06.jpg",
+        "alt": "蘋果吊燈設計與開合展示"
+      },
+      {
+        "src": "guang-xian-07.jpg",
+        "alt": "鳳梨桌燈設計與光影展示"
+      }
+    ]
   },
   {
     "id": "mori",
@@ -344,7 +391,34 @@ addEventListener('resize', () => windows.forEach(win => {
     const title = document.createElement('h3'); title.textContent = project.title;
     const category = document.createElement('p'); category.className = 'type'; category.textContent = project.category;
     const text = document.createElement('p'); text.textContent = project.description || '';
-    body.replaceChildren(image, title, category, text);
+    body.replaceChildren(image, title, category);
+    if (project.sections?.length) {
+      for (const section of project.sections) {
+        const block = document.createElement('section'); block.className = 'project-story';
+        const heading = document.createElement('h4'); heading.textContent = section.title; block.append(heading);
+        for (const paragraph of section.paragraphs) {
+          const p = document.createElement('p');
+          paragraph.split(/(\*\*.*?\*\*)/g).forEach(part => {
+            if (part.startsWith('**') && part.endsWith('**')) {
+              const strong = document.createElement('strong'); strong.textContent = part.slice(2, -2); p.append(strong);
+            } else p.append(document.createTextNode(part));
+          });
+          block.append(p);
+        }
+        body.append(block);
+      }
+    } else body.append(text);
+    if (project.images?.length) {
+      const gallery = document.createElement('div'); gallery.className = 'project-image-sequence';
+      for (const item of project.images) {
+        const figure = document.createElement('figure');
+        const img = new Image(); img.src = item.src; img.alt = item.alt;
+        img.loading = 'lazy'; img.decoding = 'async';
+        const link = document.createElement('a'); link.href = item.src; link.target = '_blank'; link.rel = 'noopener';
+        link.setAttribute('aria-label', item.alt + '，開啟完整圖片'); link.append(img); figure.append(link); gallery.append(figure);
+      }
+      body.append(gallery);
+    }
     if (project.demo) {
       const note = document.createElement('p'); note.className = 'pending';
       note.textContent = '此為版型示範，非謝沛璇本人實際作品。'; body.append(note);
