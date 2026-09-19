@@ -2,13 +2,13 @@
 const projects = [
   {
     "id": "type-study",
-    "title": "字之間",
-    "category": "字體與海報",
-    "cover": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiNkNWJmZTkiLz48ZyBmaWxsPSIjMzkyNDQzIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+5a2XPC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MTAiIGZvbnQtc2l6ZT0iMTQwIiBmb250LXdlaWdodD0iNzAwIj7kuYvplpM8L3RleHQ+PHRleHQgeD0iNDgiIHk9Ijg4NSIgZm9udC1zaXplPSIxOCI+Q09OQ0VQVCBDT1ZFUiAvIExBWU9VVCBTQU1QTEU8L3RleHQ+PC9nPjxwYXRoIGQ9Ik00OCA4MDVINjcyIiBzdHJva2U9IiMzOTI0NDMiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==",
-    "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiNkNWJmZTkiLz48ZyBmaWxsPSIjMzkyNDQzIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+5a2XPC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MTAiIGZvbnQtc2l6ZT0iMTQwIiBmb250LXdlaWdodD0iNzAwIj7kuYvplpM8L3RleHQ+PHRleHQgeD0iNDgiIHk9Ijg4NSIgZm9udC1zaXplPSIxOCI+Q09OQ0VQVCBDT1ZFUiAvIExBWU9VVCBTQU1QTEU8L3RleHQ+PC9nPjxwYXRoIGQ9Ik00OCA4MDVINjcyIiBzdHJva2U9IiMzOTI0NDMiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==",
+    "title": "光纖-環保植物皮革應用於家飾燈具之研究",
+    "category": "商品設計/植物皮革/",
+    "cover": "guang-xian-cover.jpg",
+    "preview": "guang-xian-cover.jpg",
     "link": "#project/type-study",
-    "description": "以字距、傾斜與留白探索文字的節奏。",
-    "demo": true
+    "description": "環保植物皮革應用於家飾燈具之研究。",
+    "demo": false
   },
   {
     "id": "mori",
