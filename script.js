@@ -554,7 +554,7 @@ addEventListener('resize', () => windows.forEach(win => {
     if (block.title) {
       const heading = document.createElement('h4'); heading.textContent = block.title;
       if (block.pointsUp) {
-        const arrow = document.createElement('span'); arrow.className = 'heading-up-arrow'; arrow.textContent = '↑'; arrow.setAttribute('aria-hidden', 'true'); heading.prepend(arrow);
+        const arrow = document.createElement('span'); arrow.className = 'heading-up-arrow'; arrow.textContent = '＾'; arrow.setAttribute('aria-hidden', 'true'); heading.prepend(arrow);
       }
       section.append(heading);
     }

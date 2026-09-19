@@ -254,3 +254,5 @@ input,textarea,[contenteditable="true"]{cursor:text}
 .detail-body.meow-project>h3{background:#f7dfeb;border-color:#e3bacf;font-size:24px;padding:12px 20px;margin-top:24px}
 .meow-project .heading-up-arrow{display:inline-block;margin-right:10px;font-size:1.25em;font-weight:800;line-height:1;color:#945b82;vertical-align:baseline}
 @media(max-width:700px){.detail-body.meow-project>h3{font-size:21px}.meow-project .project-story h4{font-size:18px;padding:9px 13px}}
+
+.meow-project .heading-up-arrow{font-size:1.05em;margin-right:9px;font-weight:700;position:relative;top:2px}
