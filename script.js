@@ -59,13 +59,164 @@ const projects = [
   },
   {
     "id": "mori",
-    "title": "MORI / 森",
-    "category": "品牌識別",
-    "cover": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiNmMWNhZGUiLz48ZyBmaWxsPSIjNTkzNDQ5IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+bW9yaTwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjEwIiBmb250LXNpemU9IjE0MCIgZm9udC13ZWlnaHQ9IjcwMCI+5qOuPC90ZXh0Pjx0ZXh0IHg9IjQ4IiB5PSI4ODUiIGZvbnQtc2l6ZT0iMTgiPkNPTkNFUFQgQ09WRVIgLyBMQVlPVVQgU0FNUExFPC90ZXh0PjwvZz48cGF0aCBkPSJNNDggODA1SDY3MiIgc3Ryb2tlPSIjNTkzNDQ5IiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=",
-    "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiNmMWNhZGUiLz48ZyBmaWxsPSIjNTkzNDQ5IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+bW9yaTwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjEwIiBmb250LXNpemU9IjE0MCIgZm9udC13ZWlnaHQ9IjcwMCI+5qOuPC90ZXh0Pjx0ZXh0IHg9IjQ4IiB5PSI4ODUiIGZvbnQtc2l6ZT0iMTgiPkNPTkNFUFQgQ09WRVIgLyBMQVlPVVQgU0FNUExFPC90ZXh0PjwvZz48cGF0aCBkPSJNNDggODA1SDY3MiIgc3Ryb2tlPSIjNTkzNDQ5IiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=",
+    "title": "Meow Meow Smile",
+    "category": "寓教於樂/口腔保健/可愛畫風/親子互動",
+    "cover": "meow-01.jpg",
+    "preview": "meow-01.jpg",
     "link": "#project/mori",
-    "description": "以簡潔字標與粉色呈現品牌識別的版型方向。",
-    "demo": true
+    "description": "《Meow Meow Smile》是一款以大富翁形式進行的教育型桌遊，專為10歲以上孩童設計。",
+    "demo": false,
+    "blocks": [
+      {
+        "title": "",
+        "paragraphs": [
+          "《Meow Meow Smile》是一款以大富翁形式進行的教育型桌遊，專為10歲以上孩童設計。"
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "本作品融合口腔健康知識與聯合國永續發展目標（SDGs 3、12），透過遊戲機制如蛀牙因子卡、問題卡與正確刷牙技巧挑戰，讓玩家在趣味互動中學習護牙觀念。整體設計以可愛風格呈現，搭配注音輔助與環保材質，提升遊戲的可親性與教育意義。本人擔任主美術設計，負責角色形象、卡牌插圖與地圖構成，並與團隊共同完成遊戲企劃與測試優化。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-02.jpg",
+            "alt": "我的核心參與項目"
+          },
+          {
+            "src": "meow-03.jpg",
+            "alt": "大富翁地圖"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-04.jpg",
+            "alt": "事件卡"
+          }
+        ]
+      },
+      {
+        "title": "卡牌設計-事件卡",
+        "paragraphs": [
+          "事件卡是推動遊戲節奏與教育內容的關鍵設計，玩家踩到事件格時需立即抽卡執行，內容包含趣味挑戰與牙齒健康情境，如模擬就診的「醫院掛號卡」與教學導向的「正確刷牙技巧卡」，加強玩家對口腔保健的認識。視覺設計上採用色彩分類、圖像主導、注音輔助與統一圖示，降低閱讀門檻並提升辨識度，使兒童能輕鬆理解並參與，實現寓教於樂的遊戲體驗。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-05.jpg",
+            "alt": "貓咪魔法卡"
+          },
+          {
+            "src": "meow-06.jpg",
+            "alt": "貓咪魔法卡展示"
+          }
+        ]
+      },
+      {
+        "title": "卡牌設計-貓咪魔法卡",
+        "paragraphs": [
+          "貓咪魔法卡是提升遊戲策略性的重要輔助卡牌，玩家可透過使用它解除蛀牙因子、轉移負面狀態、換位、啟動護盾等特殊效果，扭轉戰局、保護自己或影響對手。卡牌設計魔法卡以活潑的黃色為主色，象徵魔法與轉機，搭配閃耀的星星與魔杖圖樣，營造出魔幻童趣的氛圍。，融入可愛插圖與注音輔助，讓年幼玩家也能輕鬆上手，在趣味操作中學習健康管理概念，提升遊戲的教育性與互動性。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-07.jpg",
+            "alt": "蛀牙因子卡"
+          },
+          {
+            "src": "meow-08.jpg",
+            "alt": "蛀牙因子卡展示"
+          }
+        ]
+      },
+      {
+        "title": "卡牌設計-蛀牙因子卡",
+        "paragraphs": [
+          "蛀牙因子卡模擬現實生活中會危害口腔健康的行為與狀態，如糖尿病、檳榔、抽菸、甜食、含糖飲料與懶惰刷牙等，讓玩家在遊戲中認識這些看似日常但實則危險的蛀牙因子。每位玩家起始隨機持有兩張卡牌，象徵每個人一開始可能就潛藏牙齒健康風險，必須在遊戲過程中透過解除行動或魔法卡來應對與排除。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-09.jpg",
+            "alt": "問題卡"
+          }
+        ]
+      },
+      {
+        "title": "卡牌設計-問題卡",
+        "paragraphs": [
+          "問題卡是本桌遊中結合知識與遊戲性的核心元素，透過口腔健康相關的選擇題，引導玩家在遊戲中學習正確護牙觀念。除了以「淺顯易懂＋情境式提問」的方式呈現題目，讓孩童能透過遊戲連結生活經驗，更加入了答對可得好牙、答錯需交出好牙的獎懲機制，增添競爭與學習動機。視覺上則搭配注音輔助與情境插圖，即使是識字能力尚未成熟的兒童也能透過圖片理解題意，降低閱讀門檻，強化遊戲的教育性與可親性。"
+        ]
+      },
+      {
+        "title": "角色設計-勇士貓咪",
+        "carousel": [
+          {
+            "src": "meow-10.png",
+            "alt": "勇士貓咪：弓箭手"
+          },
+          {
+            "src": "meow-11.png",
+            "alt": "勇士貓咪：刺客"
+          },
+          {
+            "src": "meow-12.png",
+            "alt": "勇士貓咪：魔法師"
+          },
+          {
+            "src": "meow-13.png",
+            "alt": "勇士貓咪：騎士"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-14.jpg",
+            "alt": "遊戲盒子"
+          }
+        ]
+      },
+      {
+        "title": "遊戲盒子",
+        "paragraphs": [
+          "《Meow Meow Smile》的遊戲盒封面以可愛童趣為主，展現親和力與教育性，融合牙齒保健元素與遊戲世界觀。擬人化的勇士貓角色牙齒們及甜點場景互動，呼應遊戲主題與口腔健康教育。明亮的粉藍與粉紅配色，搭配圓潤可愛的字體，吸引兒童家庭玩家，傳達輕鬆歡樂的氛圍及「透過遊戲學習護牙」的理念。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-15.jpg",
+            "alt": "明信片正面"
+          },
+          {
+            "src": "meow-16.jpg",
+            "alt": "明信片背面"
+          }
+        ]
+      },
+      {
+        "title": "周邊商品-明信片",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "meow-17.jpg",
+            "alt": "桌遊完整展示"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "everyday",
@@ -89,6 +240,12 @@ function openWindow(id, focus = true) {
   if (!win) return;
   lastFocus.set(id, document.activeElement);
   win.hidden = false;
+  if (id === 'work') {
+    win.classList.add('maximized');
+    const button = win.querySelector('[data-action="maximize"]');
+    button?.setAttribute('aria-pressed', 'true');
+    if (button) button.title = '還原視窗大小';
+  }
   opened.add(id);
   raise(win);
   if (focus) win.querySelector('button')?.focus({ preventScroll: true });
@@ -383,7 +540,57 @@ addEventListener('resize', () => windows.forEach(win => {
     image.onerror = hidePreview;
     image.src = project.preview || project.cover;
   }
+  let stopProjectCarousel = () => {};
+  function renderProjectBlock(body, block) {
+    const section = document.createElement('section');
+    section.className = 'project-story';
+    if (block.title) {
+      const heading = document.createElement('h4'); heading.textContent = block.title; section.append(heading);
+    }
+    for (const paragraph of block.paragraphs || []) {
+      if (!paragraph) continue;
+      const p = document.createElement('p'); p.textContent = paragraph; section.append(p);
+    }
+    if (block.images) {
+      section.className = 'project-image-sequence';
+      for (const item of block.images) {
+        const link = document.createElement('a'); link.href = item.src; link.target = '_blank'; link.rel = 'noopener';
+        link.setAttribute('aria-label', item.alt + '，開啟完整圖片');
+        const img = new Image(); img.src = item.src; img.alt = item.alt; img.loading = 'lazy'; img.decoding = 'async';
+        link.append(img); section.append(link);
+      }
+    }
+    if (block.carousel) {
+      const stage = document.createElement('div'); stage.className = 'character-stage';
+      const slides = block.carousel.map((item, i) => {
+        const img = new Image(); img.src = item.src; img.alt = item.alt;
+        img.className = 'character-slide'; img.classList.toggle('current', i === 0);
+        img.setAttribute('aria-hidden', String(i !== 0)); stage.append(img); return img;
+      });
+      let index = 0, paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const controls = document.createElement('div'); controls.className = 'character-controls';
+      const label = document.createElement('span');
+      function show(next) {
+        index = (next + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.classList.toggle('current', i === index); slide.setAttribute('aria-hidden', String(i !== index)); });
+        label.textContent = `${index + 1} / ${slides.length} · ${block.carousel[index].alt}`;
+      }
+      const previous = document.createElement('button'); previous.textContent = '←'; previous.setAttribute('aria-label','上一個角色'); previous.onclick = () => show(index - 1);
+      const next = document.createElement('button'); next.textContent = '→'; next.setAttribute('aria-label','下一個角色'); next.onclick = () => show(index + 1);
+      const toggle = document.createElement('button');
+      const updateToggle = () => { toggle.textContent = paused ? '播放' : '暫停'; toggle.setAttribute('aria-label', paused ? '播放角色輪播' : '暫停角色輪播'); };
+      toggle.onclick = () => { paused = !paused; updateToggle(); }; updateToggle();
+      controls.append(previous, label, next, toggle); section.append(stage, controls); show(0);
+      const timer = setInterval(() => {
+        if (!paused && !document.hidden && !document.getElementById('detail').hidden && section.isConnected && !section.matches(':hover') && !section.contains(document.activeElement)) show(index + 1);
+      }, 3200);
+      stopProjectCarousel = () => clearInterval(timer);
+    }
+    body.append(section);
+  }
+
   function openProject(project) {
+    stopProjectCarousel();
     hidePreview();
     const body = document.getElementById('detail-body');
     const image = new Image(); image.src = project.preview || project.cover;
@@ -392,7 +599,9 @@ addEventListener('resize', () => windows.forEach(win => {
     const category = document.createElement('p'); category.className = 'type'; category.textContent = project.category;
     const text = document.createElement('p'); text.textContent = project.description || '';
     body.replaceChildren(image, title, category);
-    if (project.sections?.length) {
+    if (project.blocks?.length) {
+      project.blocks.forEach(block => renderProjectBlock(body, block));
+    } else if (project.sections?.length) {
       for (const section of project.sections) {
         const block = document.createElement('section'); block.className = 'project-story';
         const heading = document.createElement('h4'); heading.textContent = section.title; block.append(heading);
