@@ -256,3 +256,5 @@ input,textarea,[contenteditable="true"]{cursor:text}
 @media(max-width:700px){.detail-body.meow-project>h3{font-size:21px}.meow-project .project-story h4{font-size:18px;padding:9px 13px}}
 
 .meow-project .heading-up-arrow{font-size:1.05em;margin-right:9px;font-weight:700;position:relative;top:2px}
+
+.meow-project .heading-up-arrow{width:20px;height:24px;top:3px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 28'%3E%3Cpath d='M11 1Q12 0 13 1L23 11Q25 13 22 13H17V26Q17 28 15 28H9Q7 28 7 26V13H2Q-1 13 1 11Z'/%3E%3C/svg%3E") center/contain no-repeat}

@@ -227,13 +227,13 @@ const projects = [
   },
   {
     "id": "everyday",
-    "title": "日常切片",
-    "category": "編輯設計",
-    "cover": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiM4NTRiNzciLz48ZyBmaWxsPSIjZmZmYWYzIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+5pel5bi4PC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MTAiIGZvbnQtc2l6ZT0iMTQwIiBmb250LXdlaWdodD0iNzAwIj7liIfniYc8L3RleHQ+PHRleHQgeD0iNDgiIHk9Ijg4NSIgZm9udC1zaXplPSIxOCI+Q09OQ0VQVCBDT1ZFUiAvIExBWU9VVCBTQU1QTEU8L3RleHQ+PC9nPjxwYXRoIGQ9Ik00OCA4MDVINjcyIiBzdHJva2U9IiNmZmZhZjMiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==",
-    "preview": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iOTYwIiB2aWV3Qm94PSIwIDAgNzIwIDk2MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI5NjAiIGZpbGw9IiM4NTRiNzciLz48ZyBmaWxsPSIjZmZmYWYzIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiI+PHRleHQgeD0iNDgiIHk9IjcyIiBmb250LXNpemU9IjE4IiBsZXR0ZXItc3BhY2luZz0iMyI+REVTSUdOIEVYUExPUkFUSU9OUzwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNDMwIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjcwMCI+5pel5bi4PC90ZXh0Pjx0ZXh0IHg9IjUwIiB5PSI2MTAiIGZvbnQtc2l6ZT0iMTQwIiBmb250LXdlaWdodD0iNzAwIj7liIfniYc8L3RleHQ+PHRleHQgeD0iNDgiIHk9Ijg4NSIgZm9udC1zaXplPSIxOCI+Q09OQ0VQVCBDT1ZFUiAvIExBWU9VVCBTQU1QTEU8L3RleHQ+PC9nPjxwYXRoIGQ9Ik00OCA4MDVINjcyIiBzdHJva2U9IiNmZmZhZjMiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==",
+    "title": "有求必應，好神旺旺",
+    "category": "時報金犢獎-旺旺集團行銷企劃案",
+    "cover": "wang-cover.jpg",
+    "preview": "wang-cover.jpg",
     "link": "#project/everyday",
-    "description": "以字級對比與留白呈現刊物封面的版型方向。",
-    "demo": true
+    "description": "",
+    "demo": false
   }
 ];
 const windows = [...document.querySelectorAll('.window')];
@@ -247,7 +247,7 @@ function openWindow(id, focus = true) {
   if (!win) return;
   lastFocus.set(id, document.activeElement);
   win.hidden = false;
-  if (id === 'work') {
+  if (id === 'work' || id === 'detail') {
     win.classList.add('maximized');
     const button = win.querySelector('[data-action="maximize"]');
     button?.setAttribute('aria-pressed', 'true');
@@ -554,7 +554,7 @@ addEventListener('resize', () => windows.forEach(win => {
     if (block.title) {
       const heading = document.createElement('h4'); heading.textContent = block.title;
       if (block.pointsUp) {
-        const arrow = document.createElement('span'); arrow.className = 'heading-up-arrow'; arrow.textContent = '＾'; arrow.setAttribute('aria-hidden', 'true'); heading.prepend(arrow);
+        const arrow = document.createElement('span'); arrow.className = 'heading-up-arrow'; arrow.textContent = ''; arrow.setAttribute('aria-hidden', 'true'); heading.prepend(arrow);
       }
       section.append(heading);
     }
