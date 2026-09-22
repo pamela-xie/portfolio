@@ -57,7 +57,20 @@ const projects = [
       }
     ],
     "certificate": "fada-certificate.jpg",
-    "award": "2026 FADA UK 產品概念設計類 銀獎"
+    "award": "2026 FADA UK 產品概念設計類 銀獎",
+    "extraAwards": [
+      "創新設計實務研討會-環保植物皮革應用於家飾燈具之研究論文發表"
+    ],
+    "extraCertificates": [
+      {
+        "src": "guang-xian-conference.png",
+        "label": "論文發表證明"
+      }
+    ],
+    "action": {
+      "label": "點擊查看企劃書",
+      "url": "guang-xian-report.pdf"
+    }
   },
   {
     "id": "mori",
@@ -227,7 +240,11 @@ const projects = [
       }
     ],
     "certificate": "egda-certificate.png",
-    "award": "2024 EGDA全球華人教育遊戲設計大賞 優選獎"
+    "award": "2024 EGDA全球華人教育遊戲設計大賞 優選獎",
+    "action": {
+      "label": "點擊查看遊戲介紹",
+      "url": "https://www.youtube.com/watch?v=pKjXmwu7z50"
+    }
   },
   {
     "id": "everyday",
@@ -237,7 +254,232 @@ const projects = [
     "preview": "wang-cover-logo.svg",
     "link": "#project/everyday",
     "description": "",
-    "demo": false
+    "demo": false,
+    "award": "金犢獎－旺旺集團行銷企劃案創作獎",
+    "certificate": "wang-certificate.jpg",
+    "action": {
+      "label": "點擊查看企劃書",
+      "url": "wang-proposal.pdf"
+    },
+    "images": [
+      {
+        "src": "wang-contribution.png",
+        "alt": "我的核心參與項目：企劃撰寫與結構統整、品牌策略與風格設計、美術統整與版面優化、視覺角色設計"
+      }
+    ],
+    "productCards": [
+      {
+        "src": "wang-product-01.png",
+        "title": "旺旺仙貝 財力翻倍",
+        "text": "以財犬、財神為靈感，重新詮釋旺旺仙貝包裝，象徵著「財富旺旺、財運旺旺」。並將旺旺仙貝設計成金元寶造型，與財神更具連結性。"
+      },
+      {
+        "src": "wang-product-02.png",
+        "title": "旺旺果粒多 × 拜財神限定包裝",
+        "text": "將旺旺果粒多設計為紅包袋造型，傳遞送禮吉祥與財富寓意，讓消費者在享用果粒多的同時，彷彿是在將財富注入口中，增添互動趣味與祝福滿滿的心情。"
+      },
+      {
+        "src": "wang-product-03.png",
+        "title": "財運隨行・招財悠遊卡",
+        "text": "以「拜財神」為核心主題，設計結合角色插畫與吉祥語的悠遊卡，搭配節慶紅金色系與招財元素（如銅錢、財神爺、祝福語），讓悠遊卡不僅具實用性，更成為年輕族群喜愛的收藏性商品。"
+      },
+      {
+        "src": "wang-product-04.png",
+        "title": "拜財神綜合包",
+        "text": "整體以「紅色聚寶袋」造型為基礎，象徵裝滿財富與好運。以放射狀金光與產品飛躍的畫面營造「打開福袋、財氣四散」的喜氣感，視覺焦點集中又具動態感。"
+      },
+      {
+        "src": "wang-product-05.png",
+        "title": "旺旺御守系列",
+        "text": "為延伸「拜財神」節慶活動與品牌互動經驗，特別設計三款御守商品，結合年輕族群常見的祈願主題（招財、戀愛、學業），搭配旺旺品牌角色，讓御守不只是祈福道具，更成為趣味十足、充滿收藏價值的限定周邊。"
+      },
+      {
+        "src": "wang-product-06-v2.png",
+        "title": "摺紙財神爺 × 小紅書社群互動",
+        "text": "透過小紅書推出摺紙財神教學短片，吸引參與者在節慶中與品牌建立互動記憶。"
+      }
+    ]
+  },
+  {
+    "id": "haike",
+    "title": "來chill海科 玩一夏！",
+    "category": "海科盃-智慧科普與永續品牌行銷競賽",
+    "cover": "haike-cover.jpg",
+    "preview": "haike-cover.jpg",
+    "link": "#project/haike",
+    "description": "",
+    "demo": false,
+    "action": {
+      "label": "點擊查看企劃書",
+      "url": "haike-proposal.pdf"
+    },
+    "award": "海科盃－智慧科普與永續品牌行銷競賽 銀牌",
+    "certificate": "haike-certificate.png",
+    "certificateLink": "haike-certificate.pdf",
+    "blocks": [
+      {
+        "title": "專案概覽與課題",
+        "paragraphs": [
+          "本競賽以「智慧科普、永續海洋」為精神，透過海洋觀光遊憩提案，串聯海科館及周邊資源，提升海洋教育、地方觀光與品牌影響力。",
+          "以「基隆 × 海洋 × 數位 × 永續」為核心，串聯海科館與周邊景點，打造不同客群的主題旅遊體驗。",
+          "如何讓海科館不只是單一參觀景點，而成為探索基隆海洋觀光的起點？"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "haike-story-02.jpg",
+            "alt": "海科專案展示 2"
+          }
+        ],
+        "layout": ""
+      },
+      {
+        "title": "專案角色｜田野調查・企劃發想・企劃書製作・簡報設計",
+        "paragraphs": [
+          "從海科館與周邊場域調查出發，參與旅遊企劃概念與路線發想，並負責企劃內容統整及競賽提案簡報的視覺呈現。"
+        ]
+      },
+      {
+        "title": "田野調查",
+        "paragraphs": [
+          "團隊實際前往海科館及八斗子周邊進行田野調查，觀察場域、交通動線與周邊觀光資源。我們發現海科館附近聚集大量自然景觀、漁村文化及休閒景點，但各景點大多以單點方式被體驗，因此開始思考如何透過不同旅遊需求重新串聯。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "haike-story-03.jpg",
+            "alt": "海科專案展示 3"
+          },
+          {
+            "src": "haike-story-04.jpg",
+            "alt": "海科專案展示 4"
+          },
+          {
+            "src": "haike-story-05.jpg",
+            "alt": "海科專案展示 5"
+          },
+          {
+            "src": "haike-story-06.jpg",
+            "alt": "海科專案展示 6"
+          },
+          {
+            "src": "haike-story-07.jpg",
+            "alt": "海科專案展示 7"
+          },
+          {
+            "src": "haike-story-08.jpg",
+            "alt": "海科專案展示 8"
+          }
+        ],
+        "layout": "field-grid"
+      },
+      {
+        "title": "洞察與企劃方向",
+        "paragraphs": [
+          "景點並不少，缺少的是將景點轉化成完整旅遊體驗的串聯方式。",
+          "以海科館為旅程起點，融合地方文化、永續旅遊、青年回流創業與數位行銷，打造可持續發展的海洋觀光聚落。"
+        ]
+      },
+      {
+        "title": "五條主題旅遊路線",
+        "routes": [
+          {
+            "title": "01 健行強森",
+            "place": "望幽谷／潮境公園",
+            "tags": "自然 × 健行 × 生態",
+            "color": "#b8dcd1"
+          },
+          {
+            "title": "02 潮玩漁港",
+            "place": "八斗子漁港／海景",
+            "tags": "親子 × 情侶 × 深度旅遊",
+            "color": "#acd4ee"
+          },
+          {
+            "title": "03 基隆出國行",
+            "place": "正濱漁港彩色屋",
+            "tags": "拍照 × 文化 × 異國感",
+            "color": "#f3cfb4"
+          },
+          {
+            "title": "04 我們與海洋的距離",
+            "place": "海洋／漁村文化",
+            "tags": "教育 × 文化 × 海洋體驗",
+            "color": "#c9c6eb"
+          },
+          {
+            "title": "05 這趟我怕練太壯",
+            "place": "SUP／海岸",
+            "tags": "運動 × 冒險 × 戶外",
+            "color": "#efd993"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "同一個地方資源，可以因為客群不同，被重新組合成不同體驗。"
+        ]
+      },
+      {
+        "title": "延伸體驗設計",
+        "paragraphs": [
+          "將旅遊從「看景點」延伸為「參與體驗」，加入 APP 任務、生物圖鑑、夜釣小卷、一日漁夫、海廢手作等互動內容。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "haike-story-09.jpg",
+            "alt": "海科專案展示 9"
+          },
+          {
+            "src": "haike-story-10.png",
+            "alt": "海科專案展示 10"
+          },
+          {
+            "src": "haike-story-11.png",
+            "alt": "海科專案展示 11"
+          },
+          {
+            "src": "haike-story-12.png",
+            "alt": "海科專案展示 12"
+          }
+        ],
+        "layout": "mockup-grid"
+      },
+      {
+        "title": "數位與行銷延伸",
+        "paragraphs": [
+          "透過 KOL 路線體驗、海洋心理測驗與整合式旅遊平台，將路線推薦、活動報名、任務互動與社群分享串聯起來。"
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "haike-story-13.png",
+            "alt": "海科專案展示 13"
+          },
+          {
+            "src": "haike-story-14.png",
+            "alt": "海科專案展示 14"
+          },
+          {
+            "src": "haike-story-15.png",
+            "alt": "海科專案展示 15"
+          }
+        ],
+        "layout": "marketing-grid"
+      },
+      {
+        "title": "成果與學習",
+        "paragraphs": [
+          "從實際場域調查出發，將分散的景點與地方資源轉化為完整觀光企劃，也讓我更熟悉如何從觀察中整理問題、發展概念，並透過資訊設計將複雜的企劃內容轉化成清楚易懂的提案。"
+        ]
+      }
+    ]
   }
 ];
 const windows = [...document.querySelectorAll('.window')];
@@ -566,13 +808,25 @@ addEventListener('resize', () => windows.forEach(win => {
       const p = document.createElement('p'); p.textContent = paragraph; section.append(p);
     }
     if (block.images) {
-      section.className = 'project-image-sequence';
+      section.className = 'project-image-sequence' + (block.layout ? ' ' + block.layout : '');
       for (const item of block.images) {
         const link = document.createElement('a'); link.href = item.src; link.target = '_blank'; link.rel = 'noopener';
         link.setAttribute('aria-label', item.alt + '，開啟完整圖片');
         const img = new Image(); img.src = item.src; img.alt = item.alt; img.loading = 'lazy'; img.decoding = 'async';
         link.append(img); section.append(link);
       }
+    }
+    if (block.routes) {
+      const grid = document.createElement('div'); grid.className = 'haike-routes';
+      for (const route of block.routes) {
+        const card = document.createElement('article'); card.className = 'haike-route';
+        const img = document.createElement('div'); img.className = 'haike-route-color'; img.style.backgroundColor = route.color; img.setAttribute('aria-hidden', 'true');
+        const h = document.createElement('h5'); h.textContent = route.title;
+        const place = document.createElement('p'); place.textContent = route.place;
+        const tags = document.createElement('p'); tags.className = 'route-tags'; tags.textContent = route.tags;
+        card.append(img,h,place,tags); grid.append(card);
+      }
+      section.append(grid);
     }
     if (block.characters) {
       const stage = document.createElement('div'); stage.className = 'character-lineup';
@@ -593,19 +847,34 @@ addEventListener('resize', () => windows.forEach(win => {
     const category = document.createElement('p'); category.className = 'type'; category.textContent = project.category;
     const text = document.createElement('p'); text.textContent = project.description || '';
     body.classList.toggle('meow-project', project.id === 'mori');
-    const headingRow = document.createElement('div'); headingRow.className = 'project-heading-row'; headingRow.append(title);
-    if (project.certificate) {
-      const certificate = document.createElement('a'); certificate.className = 'project-certificate';
-      certificate.href = project.certificate; certificate.target = '_blank'; certificate.rel = 'noopener';
-      certificate.setAttribute('aria-label', '放大查看獎狀：' + project.award);
-      const thumb = new Image(); thumb.src = project.certificate; thumb.alt = project.award + '獎狀';
-      const caption = document.createElement('span'); caption.textContent = '點擊放大獎狀 ↗';
-      certificate.append(thumb, caption); headingRow.append(certificate);
+    document.getElementById('detail').classList.toggle('haike-project', project.id === 'haike');
+    document.getElementById('detail').classList.toggle('wang-project', project.id === 'everyday');
+    const headingRow = document.createElement('div'); headingRow.className = 'project-heading-row';
+    const summary = document.createElement('div'); summary.className = 'project-summary';
+    const titleLine = document.createElement('div'); titleLine.className = 'project-title-line'; titleLine.append(title);
+    if (project.action) {
+      const action = document.createElement('a'); action.className = 'project-action'; action.textContent = project.action.label;
+      action.href = project.action.url; action.target = '_blank'; action.rel = 'noopener'; titleLine.append(action);
     }
-    body.replaceChildren(image, headingRow, category);
-    if (project.award) {
-      const ribbon = document.createElement('p'); ribbon.className = 'award-ribbon'; ribbon.textContent = project.award; body.append(ribbon);
+    summary.append(titleLine, category);
+    for (const label of [project.award, ...(project.extraAwards || [])].filter(Boolean)) {
+      const ribbon = document.createElement('p'); ribbon.className = 'award-ribbon'; ribbon.textContent = label; summary.append(ribbon);
     }
+    headingRow.append(summary);
+    const certificates = [...(project.certificate ? [{src: project.certificate, href: project.certificateLink, label: project.award + '獎狀'}] : []), ...(project.extraCertificates || [])];
+    if (certificates.length) {
+      const group = document.createElement('div'); group.className = 'project-certificates';
+      for (const item of certificates) {
+        const certificate = document.createElement('a'); certificate.className = 'project-certificate';
+        certificate.href = item.href || item.src; certificate.target = '_blank'; certificate.rel = 'noopener';
+        certificate.setAttribute('aria-label', '放大查看：' + item.label);
+        const thumb = new Image(); thumb.src = item.src; thumb.alt = item.label;
+        const caption = document.createElement('span'); caption.textContent = '點擊放大查看 ↗';
+        certificate.append(thumb, caption); group.append(certificate);
+      }
+      headingRow.append(group);
+    }
+    body.replaceChildren(image, headingRow);
     if (project.blocks?.length) {
       project.blocks.forEach(block => renderProjectBlock(body, block));
     } else if (project.sections?.length) {
@@ -634,6 +903,20 @@ addEventListener('resize', () => windows.forEach(win => {
         link.setAttribute('aria-label', item.alt + '，開啟完整圖片'); link.append(img); figure.append(link); gallery.append(figure);
       }
       body.append(gallery);
+    }
+    if (project.productCards?.length) {
+      const showcase = document.createElement('section'); showcase.className = 'wang-products';
+      const heading = document.createElement('h4'); heading.textContent = '「拜財神」';
+      const subtitle = document.createElement('p'); subtitle.className = 'wang-products-subtitle'; subtitle.textContent = '旺旺仙貝 財力翻倍：旺旺一口 好運當頭';
+      showcase.append(heading, subtitle);
+      for (const item of project.productCards) {
+        const card = document.createElement('article'); card.className = 'wang-product-card';
+        const link = document.createElement('a'); link.href = item.src; link.target = '_blank'; link.rel = 'noopener'; link.className = 'wang-product-art'; link.setAttribute('aria-label', item.title + '，查看原圖');
+        const img = new Image(); img.src = item.src; img.alt = item.title; img.loading = 'lazy'; link.append(img);
+        const copy = document.createElement('div'); const h = document.createElement('h5'); h.textContent = '✦ ' + item.title;
+        const paragraph = document.createElement('p'); paragraph.textContent = item.text; copy.append(h, paragraph); card.append(link, copy); showcase.append(card);
+      }
+      body.append(showcase);
     }
     if (project.demo) {
       const note = document.createElement('p'); note.className = 'pending';
@@ -678,5 +961,7 @@ addEventListener('resize', () => windows.forEach(win => {
   addEventListener('blur', hidePreview); fine.addEventListener('change', hidePreview);
   document.addEventListener('pointerdown', hidePreview, true);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePreview(); });
-  if (location.hash.startsWith('#project/')) route();
+  // Every new visit starts at the welcome window, including shared project URLs.
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  openWindow('welcome', false);
 })();

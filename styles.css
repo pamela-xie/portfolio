@@ -270,3 +270,52 @@ input,textarea,[contenteditable="true"]{cursor:text}
 .character-lineup{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;background:#fff5fa;padding:10px 0}.character-lineup img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
 .project-back{display:block;margin:36px auto 12px;padding:12px 22px;font:inherit;color:var(--ink);background:#f1e3f3;border:1px solid #b992b0;cursor:pointer}.project-back:hover{background:#e8d2e4}.project-back:focus-visible,.project-certificate:focus-visible{outline:2px solid #945b82;outline-offset:4px}
 @media(max-width:600px){.project-heading-row{gap:12px}.project-certificate{flex-basis:90px}.project-certificate img{width:90px;height:80px}.meow-project .project-heading-row h3{font-size:19px}.award-ribbon{font-size:12px!important}}
+
+/* Project descriptions and certificates share a balanced, responsive row. */
+.project-heading-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:32px}
+.project-summary{min-width:0}.project-title-line{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}.project-title-line h3{flex:0 1 auto;width:auto;word-break:normal;overflow-wrap:anywhere}
+.project-certificates{display:flex;gap:14px;align-items:center}.project-certificate{flex:0 0 auto;width:180px}.project-certificate img{width:180px;height:210px;object-fit:contain}.project-action{display:inline-block;white-space:nowrap;padding:8px 14px;color:var(--ink);background:#f1e3f3;border:1px solid #b992b0;text-decoration:none;font-size:14px}.project-action:hover{background:#e8d2e4}
+.detail-body .project-story h4,.meow-project .project-heading-row h3{display:table;width:fit-content;max-width:100%;padding:0 5px;border:0;border-radius:0;box-shadow:none;background:linear-gradient(to bottom,transparent 50%,#f1e3f3 50%);line-height:1.5}
+.meow-project .project-heading-row h3{background:linear-gradient(to bottom,transparent 50%,#f7dfeb 50%)}
+.project-summary .award-ribbon{margin:12px 0!important}
+@media(max-width:1100px){.project-heading-row{grid-template-columns:1fr}.project-certificates{justify-content:flex-start;flex-wrap:wrap}.project-certificate,.project-certificate img{width:180px}}
+@media(max-width:600px){.project-certificate,.project-certificate img{width:140px}.project-certificate img{height:170px}.project-heading-row{gap:18px}}
+
+/* Award ribbons and the warm cream Wang project canvas. */
+.award-ribbon{background:#aa2634;color:#ffe08a}
+#detail.wang-project,#detail.wang-project .detail-body,#detail.wang-project .project-detail-cover{background:#fcf8ec}
+#detail.wang-project .titlebar{background:#fcf8ec}
+#detail.wang-project .project-image-sequence{margin-top:28px}
+#detail.wang-project .project-image-sequence img{display:block;width:100%;height:auto;object-fit:contain}
+
+#detail.wang-project .project-image-sequence{grid-template-columns:minmax(0,1fr);gap:28px}
+#detail.wang-project .project-image-sequence figure{width:100%;margin:0}
+
+/* Blend Wang project images into the cream page. */
+#detail.wang-project .project-detail-cover,
+#detail.wang-project .project-image-sequence img,
+#detail.wang-project .project-certificate img{border:0;border-radius:0;box-shadow:none;background:transparent}
+
+.wang-products{margin:32px 0;display:grid;gap:24px}.wang-products>h4{text-align:center;color:#ff9418;font-size:42px;margin:8px 0 0}.wang-products-subtitle{text-align:center;color:#a54413;margin:0 0 12px!important;font-weight:600}
+.wang-product-card{box-sizing:border-box;display:grid;grid-template-columns:minmax(0,32%) minmax(0,1fr);align-items:center;gap:32px;min-height:310px;padding:28px 36px;border:1px solid #ff9418;border-radius:5px;background:#f5ebe5}
+.wang-product-art{height:248px;display:flex;align-items:center;justify-content:center}.wang-product-art img{display:block;width:100%;height:100%;object-fit:contain}
+.wang-product-card h5{font-size:clamp(20px,2vw,28px);line-height:1.5;color:#940b08;margin:0 0 18px}.wang-product-card p{font-size:17px;line-height:1.9;margin:0;color:#30241e}
+@media(max-width:700px){.wang-product-card{grid-template-columns:1fr;gap:20px;padding:24px}.wang-product-art{height:210px}.wang-products>h4{font-size:32px}.wang-product-card h5{font-size:22px}.wang-product-card p{font-size:16px}}
+
+
+
+#detail.haike-project{background:#f2f9ff}
+#detail.haike-project .detail-body{background:#f7fbff url('haike-story-01.png') center center/cover no-repeat;background-attachment:scroll}
+#detail.haike-project .titlebar{background:#e7f3fc}
+.haike-project .project-story{background:#ffffffc9;padding:24px;border-top:1px solid #cce1ef}.haike-project .project-story h4{background:linear-gradient(transparent 50%,#f1e3f3 50%);font-size:20px}.haike-project .project-story p{line-height:1.95;margin:16px 0}
+.haike-project .project-image-sequence{gap:20px}.haike-project .project-image-sequence img{border:0;border-radius:4px}
+.haike-project .field-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.haike-project .field-grid img{aspect-ratio:4/5;object-fit:cover}
+.haike-project .mockup-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}.haike-project .mockup-grid a{background:#fff;padding:10px;border:1px solid #cee1ef}
+.haike-project .marketing-grid{grid-template-columns:2fr 1fr 1fr;align-items:start}.haike-project .marketing-grid a{background:#fff;padding:8px}
+.haike-routes{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-top:24px}.haike-route{grid-column:span 2;background:#fff;border:1px solid #c7dfeF;border-radius:6px;overflow:hidden}.haike-route:nth-last-child(-n+2){grid-column:span 3}.haike-route img{width:100%;height:180px;object-fit:cover}.haike-route h5{font-size:18px;color:#24516d;margin:16px}.haike-route p{margin:10px 16px!important;font-size:14px}.haike-route .route-tags{color:#487c93;padding-bottom:12px}
+@media(max-width:700px){.haike-project .field-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.haike-project .mockup-grid{grid-template-columns:1fr}.haike-project .marketing-grid{grid-template-columns:1fr 1fr}.haike-project .marketing-grid a:first-child{grid-column:1/-1}.haike-routes{grid-template-columns:1fr}.haike-route,.haike-route:nth-last-child(-n+2){grid-column:auto}.haike-project .project-story{padding:18px}}
+
+/* Let the ocean background show around the Haike cover. */
+#detail.haike-project .project-detail-cover{background:transparent}
+
+.haike-route-color{width:100%;height:120px}
